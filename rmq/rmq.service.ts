@@ -17,7 +17,9 @@ export class RmqService {
     return {
       transport: Transport.RMQ,
       options: {
-        urls: ['amqp://localhost:5672'],
+        urls: [
+          'amqps://gkxlkdbz:19Bj2b2918YxXR8qq3T93lXIW6e89pg5@sparrow.rmq.cloudamqp.com/gkxlkdbz',
+        ],
         queue: data.queue,
         noAck: data.noAck,
         persistent: true,
